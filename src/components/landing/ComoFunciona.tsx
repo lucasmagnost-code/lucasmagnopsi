@@ -1,4 +1,4 @@
-const WA = "https://whatsa.me/5514991335995/";
+import { WA } from "@/lib/whatsapp";
 
 const steps = [
   {
@@ -65,7 +65,7 @@ const ComoFunciona = () => (
       </div>
 
       <div className="fade-up text-center">
-        <a href={WA} target="_blank" rel="noopener noreferrer" className="btn-primary cta-pulse">
+        <a href={WA.primeiroPasso} target="_blank" rel="noopener noreferrer" className="btn-primary cta-pulse">
           Iniciar conversa no WhatsApp
         </a>
       </div>

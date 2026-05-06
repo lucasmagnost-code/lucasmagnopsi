@@ -1,6 +1,5 @@
 import { Check } from "lucide-react";
-
-const WA = "https://whatsa.me/5514991335995/";
+import { WA } from "@/lib/whatsapp";
 
 const forWhom = [
   "Adultos com suspeita de TDAH ou TEA",
@@ -12,10 +11,10 @@ const forWhom = [
 ];
 
 const steps = [
-  { num: "01", title: "Entrevista Inicial", desc: "Conversamos sobre sua história, queixas e objetivos." },
-  { num: "02", title: "Aplicação dos Testes", desc: "Instrumentos padronizados aplicados em sessão estruturada." },
-  { num: "03", title: "Interpretação Clínica", desc: "Análise integrada de todos os dados coletados." },
-  { num: "04", title: "Devolutiva com Laudo", desc: "Explicação clara dos resultados + laudo formal entregue." },
+  { num: "01", title: "Entrevista Inicial",      desc: "Conversamos sobre sua história, queixas e objetivos.", time: "~1h" },
+  { num: "02", title: "Aplicação dos Testes",    desc: "Instrumentos padronizados em sessão estruturada.",     time: "3-4 sessões" },
+  { num: "03", title: "Interpretação Clínica",   desc: "Análise integrada dos dados coletados.",                time: "~1 semana" },
+  { num: "04", title: "Devolutiva com Laudo",    desc: "Explicação dos resultados + laudo formal entregue.",   time: "~1h" },
 ];
 
 const Avaliacao = () => (
@@ -80,17 +79,40 @@ const Avaliacao = () => (
               >
                 {step.num}
               </span>
-              <p className="font-display text-[17px] font-medium text-navy mb-2">{step.title}</p>
-              <p className="font-body text-[13px] text-slate/70 leading-[1.7]">{step.desc}</p>
+              <p className="font-display text-[17px] font-medium text-navy mb-1">{step.title}</p>
+              <span className="font-body text-[10px] tracking-[0.18em] uppercase text-gold block mb-2">
+                {step.time}
+              </span>
+              <p className="font-body text-[13px] text-slate/80 leading-[1.7]">{step.desc}</p>
             </div>
           ))}
         </div>
       </div>
 
+      {/* Investment note */}
+      <div className="fade-up mt-14 max-w-xl mx-auto">
+        <div
+          className="rounded-2xl p-6 text-center"
+          style={{
+            background: "linear-gradient(135deg, #FAFAF8 0%, #f3ede2 100%)",
+            border: "1px solid #A68B6830",
+          }}
+        >
+          <span className="section-label">Investimento</span>
+          <p className="font-body text-[14px] text-slate leading-[1.85]">
+            O processo completo é personalizado conforme o escopo da avaliação.
+            <br className="hidden md:block" />
+            <span className="text-navy font-medium">
+              Os valores são informados após a entrevista inicial — sem compromisso.
+            </span>
+          </p>
+        </div>
+      </div>
+
       {/* CTA */}
-      <div className="fade-up text-center mt-12">
+      <div className="fade-up text-center mt-10">
         <a
-          href={WA}
+          href={WA.avaliacao}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-dark"

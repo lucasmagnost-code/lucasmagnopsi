@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-
-const WA = "https://whatsa.me/5514991335995/";
+import { WA } from "@/lib/whatsapp";
 
 const faqs = [
   {
@@ -40,7 +39,7 @@ const faqs = [
 ];
 
 const Faq = () => {
-  const [openIdx, setOpenIdx] = useState<number | null>(null);
+  const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   return (
     <section id="faq" className="py-20 md:py-28 bg-off-white">
@@ -79,7 +78,7 @@ const Faq = () => {
                   <p className="font-body text-[14px] text-slate leading-[1.85]">{item.a}</p>
                   {item.cta && (
                     <a
-                      href={WA}
+                      href={WA.faq}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex mt-4 btn-primary !py-2.5 !px-5 !text-[13px]"

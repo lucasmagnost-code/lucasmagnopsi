@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import heroImg from "@/assets/lucas-hero.png";
-
-const WA = "https://whatsa.me/5514991335995/";
+import { WA } from "@/lib/whatsapp";
 
 const Hero = () => {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
@@ -70,15 +69,15 @@ const Hero = () => {
             style={{ transitionDelay: "0.3s" }}
           >
             <a
-              href={WA}
+              href={WA.hero}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary cta-pulse"
             >
-              Quero agendar uma conversa
+              Agendar Acolhimento
             </a>
-            <a href="#sobre" className="btn-ghost">
-              Conheça minha abordagem
+            <a href="#auto-avaliacao" className="btn-ghost">
+              Faço sentido pra você?
             </a>
           </div>
         </div>
@@ -117,7 +116,7 @@ const Hero = () => {
                 <div
                   className="absolute inset-0"
                   style={{
-                    background: "linear-gradient(to bottom, transparent 65%, rgba(7,23,57,0.4) 100%)",
+                    background: "linear-gradient(to bottom, transparent 78%, rgba(7,23,57,0.35) 100%)",
                   }}
                 />
               </div>

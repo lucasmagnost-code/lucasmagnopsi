@@ -8,7 +8,7 @@
   :root {
     /* Lucas brand palette */
     --navy: 216 76% 13%;        /* #071739 */
-    --slate: 210 17% 40%;       /* #4B6382 */
+    --slate: 211 24% 35%;       /* #44597A — escurecido para WCAG AAA */
     --slate-light: 210 14% 65%; /* #A4B5C4 */
     --silver: 210 11% 83%;      /* #CDD5DB */
     --gold: 32 28% 53%;         /* #A68B68 */
@@ -22,12 +22,12 @@
     --card-foreground: 216 76% 13%;
     --popover: 0 0% 100%;
     --popover-foreground: 216 76% 13%;
-    --primary: 210 17% 40%;
+    --primary: 211 24% 35%;
     --primary-foreground: 0 0% 100%;
     --secondary: 33 54% 75%;
     --secondary-foreground: 216 76% 13%;
     --muted: 210 14% 65%;
-    --muted-foreground: 210 17% 40%;
+    --muted-foreground: 211 24% 35%;
     --accent: 33 54% 75%;
     --accent-foreground: 216 76% 13%;
     --destructive: 0 84% 60%;
@@ -43,6 +43,11 @@
   * { @apply border-border; }
   html { font-size: 17px; scroll-behavior: smooth; }
   body { @apply bg-background text-foreground font-body leading-relaxed antialiased; }
+
+  /* Bottom padding so StickyMobileBar doesn't cover content on mobile */
+  @media (max-width: 767px) {
+    body { padding-bottom: 80px; }
+  }
 }
 
 @layer utilities {
@@ -51,12 +56,12 @@
 
   /* Brand color shortcuts */
   .bg-navy       { background-color: #071739; }
-  .bg-slate      { background-color: #4B6382; }
+  .bg-slate      { background-color: #44597A; }
   .bg-gold       { background-color: #A68B68; }
   .bg-champagne  { background-color: #E3C39D; }
   .bg-off-white  { background-color: #FAFAF8; }
   .text-navy     { color: #071739; }
-  .text-slate    { color: #4B6382; }
+  .text-slate    { color: #44597A; }
   .text-gold     { color: #A68B68; }
   .text-champagne { color: #E3C39D; }
 
@@ -94,6 +99,15 @@
   .section-label {
     @apply font-body text-[11px] font-semibold tracking-[0.22em] uppercase text-gold block mb-3;
   }
+
+  /* Tilt photo (Sobre section) */
+  .photo-tilt {
+    transform: rotate(-1.5deg);
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .photo-tilt:hover {
+    transform: rotate(0deg) scale(1.02);
+  }
 }
 
 /* Scroll-triggered fade-up */
@@ -111,6 +125,15 @@
 .slide-left  { opacity: 0; transform: translateX(-50px); transition: opacity 0.5s ease, transform 0.5s ease; }
 .slide-right { opacity: 0; transform: translateX(50px);  transition: opacity 0.5s ease, transform 0.5s ease; }
 .slide-left.visible, .slide-right.visible { opacity: 1; transform: translateX(0); }
+
+/* Quiz fade-in */
+.quiz-fade {
+  animation: quizFade 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes quizFade {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
 
 /* Ticker marquee */
 @keyframes marquee {
@@ -134,7 +157,7 @@
   opacity: 0;
 }
 .spec-content.open {
-  max-height: 200px;
+  max-height: 220px;
   opacity: 1;
 }
 
@@ -145,4 +168,14 @@ svg.wave path { fill: inherit; }
 .photo-parallax {
   transition: transform 0.1s ease-out;
   will-change: transform;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-up, .slide-left, .slide-right, .quiz-fade, .ticker-track, .cta-pulse {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }

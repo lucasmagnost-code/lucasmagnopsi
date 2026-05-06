@@ -5,22 +5,22 @@ const specs = [
   {
     title: "Autoestima e Autoimagem",
     short: "Quando a voz interna é mais dura do que qualquer pessoa ao redor jamais seria.",
-    full: "Quando você não reconhece seu próprio valor. Trabalhamos juntos para identificar as raízes desse padrão e construir uma relação mais justa com você mesmo.",
+    full: "Quando você não reconhece seu próprio valor, vamos juntos identificar as raízes desse padrão e construir uma relação mais justa consigo mesmo.",
   },
   {
     title: "Ansiedade",
     short: "Quando o pensamento não para e o corpo paga a conta.",
-    full: "Quando o medo do que pode acontecer ocupa espaço de viver o que está acontecendo. Existem ferramentas concretas e comprovadas para isso.",
+    full: "Quando o medo do que pode acontecer ocupa o espaço de você viver o que está acontecendo. Existem ferramentas concretas e comprovadas — e a gente usa.",
   },
   {
     title: "Depressão",
     short: "Quando a vontade de tentar parece distante demais.",
-    full: "Quando tudo exige um esforço desproporcional ao resultado. Você não precisa atravessar isso sozinho — e existem caminhos para retomar o contato com a vida.",
+    full: "Quando tudo exige um esforço desproporcional ao resultado. Você não precisa atravessar isso sozinho — e existem caminhos para retomar contato com a vida.",
   },
   {
     title: "Relacionamentos",
-    short: "Quando os padrões que você repete nos relacionamentos começam a custar.",
-    full: "Cônjuges, família, trabalho — os vínculos afetivos moldam quem somos. Existe outro caminho quando esses padrões já não servem.",
+    short: "Quando os padrões que você repete começam a custar caro.",
+    full: "Cônjuges, família, trabalho — os vínculos afetivos moldam quem somos. Existe outro caminho quando esses padrões já não servem para você.",
   },
   {
     title: "Luto e Perda",
@@ -50,10 +50,15 @@ const specs = [
   },
 ];
 
+const VISIBLE_DEFAULT = 6;
+
 const Specialties = () => {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
+  const [showAll, setShowAll] = useState(false);
 
   const toggle = (i: number) => setOpenIdx(openIdx === i ? null : i);
+  const visible = showAll ? specs : specs.slice(0, VISIBLE_DEFAULT);
+  const hiddenCount = specs.length - VISIBLE_DEFAULT;
 
   return (
     <section id="especialidades" className="py-20 md:py-28 bg-off-white">
@@ -67,11 +72,11 @@ const Specialties = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          {specs.map((s, i) => (
+          {visible.map((s, i) => (
             <div
               key={i}
               className="fade-up rounded-xl overflow-hidden border border-slate/10 bg-white transition-all duration-300 hover:shadow-card cursor-pointer"
-              style={{ transitionDelay: `${i * 0.04}s` }}
+              style={{ transitionDelay: `${Math.min(i, 5) * 0.04}s` }}
               onClick={() => toggle(i)}
             >
               <div className="flex items-center justify-between px-6 py-4">
@@ -102,6 +107,25 @@ const Specialties = () => {
             </div>
           ))}
         </div>
+
+        {hiddenCount > 0 && (
+          <div className="fade-up text-center mt-8">
+            <button
+              onClick={() => { setShowAll(!showAll); setOpenIdx(null); }}
+              className="inline-flex items-center gap-2 font-body text-[13px] text-slate
+                         hover:text-gold transition-colors cursor-pointer
+                         border border-slate/20 rounded-full px-5 py-2.5
+                         hover:border-gold/50"
+            >
+              {showAll ? "Recolher" : `Ver mais ${hiddenCount} áreas de atendimento`}
+              <ChevronDown
+                size={14}
+                strokeWidth={1.8}
+                className={`transition-transform duration-300 ${showAll ? "rotate-180" : ""}`}
+              />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

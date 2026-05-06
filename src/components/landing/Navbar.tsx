@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-
-const WA = "https://whatsa.me/5514991335995/";
+import { WA } from "@/lib/whatsapp";
 
 const links = [
   { label: "Sobre", href: "#sobre" },
@@ -50,7 +49,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href={WA}
+              href={WA.navbar}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary !py-2.5 !px-5 !text-[13px]"
@@ -93,7 +92,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href={WA}
+            href={WA.navbar}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary mt-4"

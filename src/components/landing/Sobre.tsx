@@ -19,9 +19,9 @@ const Sobre = () => (
                 left: "14px",
               }}
             />
-            {/* Photo circle with gold border */}
+            {/* Photo circle with gold border + tilt on hover */}
             <div
-              className="relative overflow-hidden shadow-soft"
+              className="photo-tilt relative overflow-hidden shadow-soft"
               style={{
                 width: "280px",
                 height: "280px",

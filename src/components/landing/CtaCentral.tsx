@@ -1,4 +1,4 @@
-const WA = "https://whatsa.me/5514991335995/";
+import { WA } from "@/lib/whatsapp";
 
 const CtaCentral = () => (
   <section
@@ -24,7 +24,7 @@ const CtaCentral = () => (
         </p>
 
         <a
-          href={WA}
+          href={WA.ctaFinal}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-primary cta-pulse text-[16px] px-10 py-5"
