@@ -5,7 +5,8 @@ import { WA } from "@/lib/whatsapp";
 const faqs = [
   {
     q: "Quanto custa a consulta?",
-    a: "O valor da sessão fica entre R$100 e R$200, dependendo do tipo de atendimento. Se quiser saber exatamente antes de agendar, manda uma mensagem — respondo com prazer.",
+    a: "O valor da sessão é estipulado durante o acolhimento inicial, conforme o tipo de atendimento e o seu objetivo clínico. Para conversarmos sobre o seu caso e alinhar o investimento, manda uma mensagem.",
+    cta: true,
   },
   {
     q: "Você atende pelo plano de saúde?",
@@ -13,19 +14,19 @@ const faqs = [
   },
   {
     q: "O atendimento funciona online?",
-    a: "Sim. A teleconsulta é regulamentada pelo CFP e tem eficácia comprovada tanto para psicoterapia quanto para parte do processo de avaliação neuropsicológica. Atendo presencialmente em Brasília e online para todo o Brasil.",
+    a: "Sim. A teleconsulta é regulamentada pelo CFP (Resolução nº 11/2018) e tem eficácia comprovada tanto para psicoterapia quanto para parte do processo de avaliação neuropsicológica. Atendo presencialmente em Brasília e online para todo o Brasil.",
   },
   {
     q: "Qual a diferença entre psicólogo e neuropsicólogo?",
-    a: "O neuropsicólogo tem formação especializada para avaliar e compreender como o funcionamento do cérebro influencia o comportamento e a saúde mental. Isso me permite fazer psicoterapia E realizar avaliações neuropsicológicas completas com laudo — dois serviços que normalmente exigem profissionais diferentes.",
+    a: "Neuropsicologia é uma especialidade da Psicologia reconhecida pelo Conselho Federal de Psicologia (Resolução CFP nº 17/2017). Para atuar como neuropsicólogo, é necessário ser psicólogo registrado no CRP e possuir o Título de Especialista em Neuropsicologia conferido pelo CFP. Na prática, isso significa que conduzo psicoterapia e também processos de avaliação neuropsicológica, dois trabalhos complementares que exigem formações distintas.",
   },
   {
     q: "Quanto tempo dura o processo terapêutico?",
-    a: "Cada processo é único. Alguns objetivos se alcançam em poucos meses; outros demandam mais tempo. Revisamos regularmente juntos o que está funcionando e o ritmo que faz sentido para você.",
+    a: "Cada processo é único. Alguns objetivos se alcançam em poucos meses, outros demandam mais tempo. Revisamos regularmente juntos o que está funcionando e o ritmo que faz sentido para você.",
   },
   {
-    q: "O laudo é aceito em escolas, concursos e pelo INSS?",
-    a: "Sim. O laudo segue os protocolos do CFP e é reconhecido por instituições de ensino, concursos públicos, INSS, empregadores e planos de saúde para benefícios ou adaptações.",
+    q: "Avaliação neuropsicológica gera laudo?",
+    a: "O processo de avaliação produz, ao final, o documento técnico cabível conforme a finalidade e os achados clínicos (relatório, parecer ou laudo), em conformidade com a Resolução CFP nº 06/2019. O tipo de documento é definido após a conclusão da avaliação, não antes.",
   },
   {
     q: "Você atende crianças?",

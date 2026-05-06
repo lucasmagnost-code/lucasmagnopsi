@@ -3,18 +3,18 @@ import { WA } from "@/lib/whatsapp";
 
 const forWhom = [
   "Adultos com suspeita de TDAH ou TEA",
-  "Queixas de memória ou concentração",
+  "Queixas de memória, atenção ou processamento",
   "Idosos com preocupação sobre declínio cognitivo",
-  "Laudos para concursos, escolas e INSS",
-  "Profissionais que precisam de relatório formal",
-  "Quem quer se entender melhor — com ou sem diagnóstico",
+  "Documentação para finalidades escolares e profissionais",
+  "Profissionais que precisam de relatório técnico",
+  "Quem quer se entender melhor, com ou sem diagnóstico",
 ];
 
 const steps = [
-  { num: "01", title: "Entrevista Inicial",      desc: "Conversamos sobre sua história, queixas e objetivos.", time: "~1h" },
-  { num: "02", title: "Aplicação dos Testes",    desc: "Instrumentos padronizados em sessão estruturada.",     time: "3-4 sessões" },
-  { num: "03", title: "Interpretação Clínica",   desc: "Análise integrada dos dados coletados.",                time: "~1 semana" },
-  { num: "04", title: "Devolutiva com Laudo",    desc: "Explicação dos resultados + laudo formal entregue.",   time: "~1h" },
+  { num: "01", title: "Acolhimento",          desc: "Conversamos sobre sua história, queixas e objetivos.",                  time: "~1h" },
+  { num: "02", title: "Aplicação dos Testes", desc: "Instrumentos padronizados em sessões estruturadas.",                    time: "3 a 4 sessões" },
+  { num: "03", title: "Interpretação Clínica", desc: "Análise integrada dos dados coletados.",                                time: "~1 semana" },
+  { num: "04", title: "Devolutiva",            desc: "Explicação dos resultados e entrega do documento técnico cabível.",     time: "~1h" },
 ];
 
 const Avaliacao = () => (
@@ -27,7 +27,7 @@ const Avaliacao = () => (
           Avaliação Neuropsicológica.
         </h2>
         <p className="font-body text-[16px] text-slate max-w-xl mx-auto">
-          O serviço mais completo da neuropsicologia — e o mais subestimado por quem mais precisa.
+          O processo mais completo da neuropsicologia, e o mais subestimado por quem mais precisa.
         </p>
       </div>
 
@@ -37,14 +37,15 @@ const Avaliacao = () => (
         {/* What it is */}
         <div
           className="fade-up rounded-2xl p-7"
-          style={{ background: "#E3C39D33", border: "1px solid #A68B6840" }}
+          style={{ background: "#B8CFBA33", border: "1px solid #5A8B6E40" }}
         >
           <h3 className="font-display text-[22px] font-medium text-navy mb-4">O que é</h3>
           <p className="font-body text-[15px] text-slate leading-[1.85]">
-            A avaliação neuropsicológica mapeia como o seu cérebro processa informação —
-            atenção, memória, funções executivas, linguagem e inteligência. Usando testes
-            validados internacionalmente, ela gera um laudo reconhecido pelo MEC, CFP, INSS
-            e empregadores.
+            A avaliação neuropsicológica investiga, por meio de instrumentos padronizados,
+            como o seu funcionamento cognitivo se organiza: atenção, memória, funções executivas,
+            linguagem e inteligência. Ao final do processo, é produzido o documento técnico cabível
+            (relatório, parecer ou laudo, conforme a finalidade), em conformidade com a Resolução
+            CFP nº 06/2019.
           </p>
         </div>
 
@@ -94,8 +95,8 @@ const Avaliacao = () => (
         <div
           className="rounded-2xl p-6 text-center"
           style={{
-            background: "linear-gradient(135deg, #FAFAF8 0%, #f3ede2 100%)",
-            border: "1px solid #A68B6830",
+            background: "linear-gradient(135deg, #FAFAF8 0%, #eef2ee 100%)",
+            border: "1px solid #5A8B6E30",
           }}
         >
           <span className="section-label">Investimento</span>
@@ -103,7 +104,7 @@ const Avaliacao = () => (
             O processo completo é personalizado conforme o escopo da avaliação.
             <br className="hidden md:block" />
             <span className="text-navy font-medium">
-              Os valores são informados após a entrevista inicial — sem compromisso.
+              Os valores são informados após o acolhimento inicial, sem compromisso.
             </span>
           </p>
         </div>
@@ -122,7 +123,6 @@ const Avaliacao = () => (
       </div>
     </div>
 
-    {/* Wave */}
     <div className="absolute bottom-0 left-0 right-0">
       <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
         <path d="M0 24C360 0 1080 48 1440 24V48H0V24Z" fill="#FAFAF8" />

@@ -3,7 +3,7 @@ const approaches = [
     emoji: "◯",
     title: "Abordagem Centrada na Pessoa",
     tag: "ACP",
-    color: "#A68B68",
+    color: "#5A8B6E",
     text: "Desenvolvida por Carl Rogers, a ACP parte do princípio de que você é o maior especialista em você mesmo. O terapeuta cria as condições de segurança, empatia e autenticidade para que você encontre seus próprios caminhos. Sem julgamento. Sem scripts.",
   },
   {
@@ -11,7 +11,7 @@ const approaches = [
     title: "Terapia Cognitivo-Comportamental",
     tag: "TCC",
     color: "#4B6382",
-    text: "A TCC trabalha com ferramentas concretas a relação entre pensamentos, emoções e comportamentos. Com as maiores evidências científicas para ansiedade, depressão e TDAH — é o complemento prático e objetivo da ACP.",
+    text: "A TCC trabalha com ferramentas concretas a relação entre pensamentos, emoções e comportamentos. Com as maiores evidências científicas para ansiedade, depressão e TDAH, é o complemento prático e objetivo da ACP.",
   },
   {
     emoji: "◇",
@@ -59,7 +59,7 @@ const Abordagem = () => (
 
       {/* Pull quote */}
       <blockquote className="fade-up text-center mt-14 font-display text-[22px] md:text-[26px] italic text-slate max-w-2xl mx-auto leading-[1.5]">
-        "Consiga ser quem você é, a maior parte do tempo —<br className="hidden md:block" />
+        "Consiga ser quem você é, a maior parte do tempo,<br className="hidden md:block" />
         filtrando o que impede isso."
       </blockquote>
     </div>

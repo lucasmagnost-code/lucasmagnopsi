@@ -5,8 +5,8 @@ const steps = [
     num: "1",
     icon: "💬",
     title: "Primeiro contato",
-    desc: "Manda uma mensagem — sem formulário longo, sem compromisso. Conversamos brevemente sobre o que te trouxe até aqui.",
-    color: "#A68B68",
+    desc: "Manda uma mensagem, sem formulário longo, sem compromisso. Conversamos brevemente sobre o que te trouxe até aqui.",
+    color: "#5A8B6E",
   },
   {
     num: "2",
@@ -19,7 +19,7 @@ const steps = [
     num: "3",
     icon: "📈",
     title: "Processo personalizado",
-    desc: "Construímos juntos o caminho certo — seja psicoterapia, avaliação neuropsicológica ou a combinação dos dois.",
+    desc: "Construímos juntos o caminho certo, seja psicoterapia, avaliação neuropsicológica ou a combinação dos dois.",
     color: "#071739",
   },
 ];

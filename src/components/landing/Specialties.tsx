@@ -10,43 +10,43 @@ const specs = [
   {
     title: "Ansiedade",
     short: "Quando o pensamento não para e o corpo paga a conta.",
-    full: "Quando o medo do que pode acontecer ocupa o espaço de você viver o que está acontecendo. Existem ferramentas concretas e comprovadas — e a gente usa.",
+    full: "Quando o medo do que pode acontecer ocupa o espaço de você viver o que está acontecendo. Existem ferramentas concretas e comprovadas, e a gente usa.",
   },
   {
     title: "Depressão",
     short: "Quando a vontade de tentar parece distante demais.",
-    full: "Quando tudo exige um esforço desproporcional ao resultado. Você não precisa atravessar isso sozinho — e existem caminhos para retomar contato com a vida.",
+    full: "Quando tudo exige um esforço desproporcional ao resultado. Você não precisa atravessar isso sozinho, e existem caminhos para retomar contato com a vida.",
   },
   {
-    title: "Relacionamentos",
+    title: "Relacionamentos e Terapia de Casal",
     short: "Quando os padrões que você repete começam a custar caro.",
-    full: "Cônjuges, família, trabalho — os vínculos afetivos moldam quem somos. Existe outro caminho quando esses padrões já não servem para você.",
+    full: "Vínculos afetivos, família, trabalho. Os relacionamentos moldam quem somos e existe outro caminho quando esses padrões já não servem para você ou para a relação.",
   },
   {
     title: "Luto e Perda",
-    short: "Quando a dor de perder alguém — ou algo — parece maior do que você aguenta.",
+    short: "Quando a dor de perder alguém, ou algo, parece maior do que você aguenta.",
     full: "O luto não tem prazo, mas pode ter suporte. Trabalhamos para que você possa carregar essa dor sem ser engolido por ela.",
   },
   {
     title: "Trauma e Violência",
     short: "Para quem carrega marcas que não escolheu.",
-    full: "Reencontrar um lugar seguro dentro de si é possível — com tempo, cuidado e técnica adequada. Trabalho com abordagens validadas para trauma.",
+    full: "Reencontrar um lugar seguro dentro de si é possível, com tempo, cuidado e técnica adequada. Trabalho com abordagens validadas para trauma.",
   },
   {
-    title: "TEA e TDAH Adulto",
+    title: "TEA e TDAH em Adultos",
     short: "Para adultos que cresceram sem diagnóstico e carregam o peso de não se encaixar.",
-    full: "Entender como sua mente funciona muda tudo. Diagnóstico, compreensão e estratégias práticas para uma vida mais alinhada com quem você realmente é.",
+    full: "Entender como sua mente funciona muda tudo. Compreensão, estratégias práticas e, quando indicado, processo de avaliação neuropsicológica para uma vida mais alinhada com quem você realmente é.",
   },
   {
     title: "Avaliação Neuropsicológica",
-    short: "Mapeamento completo do funcionamento do seu cérebro com laudo formal.",
-    full: "Atenção, memória, funções executivas, linguagem e inteligência — avaliados com testes internacionalmente validados. Laudo reconhecido pelo CFP, INSS e instituições de ensino.",
+    short: "Mapeamento técnico do funcionamento cognitivo, com documento adequado à finalidade.",
+    full: "Atenção, memória, funções executivas, linguagem e inteligência avaliadas com instrumentos validados. Documento técnico produzido conforme as resoluções do CFP, ao final do processo.",
     cta: true,
   },
   {
     title: "Sintomatologia Cognitiva",
     short: "Quando você percebe mudanças na memória, atenção ou processamento.",
-    full: "Diagnosticar o que está acontecendo é o primeiro passo para entender — e para escolher o caminho de cuidado mais adequado.",
+    full: "Diagnosticar o que está acontecendo é o primeiro passo para entender, e para escolher o caminho de cuidado mais adequado.",
   },
 ];
 
@@ -93,7 +93,6 @@ const Specialties = () => {
                 />
               </div>
 
-              {/* Expanded content */}
               <div className={`spec-content ${openIdx === i ? "open" : ""}`}>
                 <div className="px-6 pb-5 pt-1 border-t border-slate/8">
                   <p className="font-body text-[14px] text-slate leading-[1.8]">{s.full}</p>

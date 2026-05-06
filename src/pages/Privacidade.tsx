@@ -24,9 +24,9 @@ const Privacidade = () => (
       <div className="prose prose-slate max-w-none font-body text-[15px] text-slate leading-[1.85]">
 
         <p>
-          Este documento descreve como Lucas Magno dos Santos Teixeira (CRP 01/24403) — referido aqui como "Lucas Magno Psi"
-          — coleta, utiliza e protege os dados pessoais de pacientes e visitantes deste site, em conformidade com a
-          Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018) e o Código de Ética Profissional do Psicólogo (CFP).
+          Este documento descreve como Lucas Magno dos Santos Teixeira (CRP 01/24403), referido aqui como "Lucas Magno Psi",
+          coleta, utiliza e protege os dados pessoais de pacientes e visitantes deste site, em conformidade com a
+          Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018) e o Código de Ética Profissional do Psicólogo (CFP).
         </p>
 
         <h2 className="font-display text-[22px] font-medium text-navy mt-10 mb-4">1. Quem somos</h2>
@@ -94,7 +94,7 @@ const Privacidade = () => (
         <p>
           Este site <strong>não oferece atendimento de emergência</strong>. Em situações de crise
           ou pensamentos de autoextermínio, ligue imediatamente para o
-          {" "}<a href="tel:188" className="text-gold underline underline-offset-4 font-semibold">CVV — 188</a>
+          {" "}<a href="tel:188" className="text-gold underline underline-offset-4 font-semibold">CVV · 188</a>
           {" "}(24h, gratuito) ou procure a emergência mais próxima.
         </p>
 

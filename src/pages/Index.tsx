@@ -11,7 +11,6 @@ import SelfAssessment from "@/components/landing/SelfAssessment";
 import Abordagem from "@/components/landing/Abordagem";
 import ComoFunciona from "@/components/landing/ComoFunciona";
 import CtaCentral from "@/components/landing/CtaCentral";
-import InstagramPreview from "@/components/landing/InstagramPreview";
 import Etica from "@/components/landing/Etica";
 import Faq from "@/components/landing/Faq";
 import Footer from "@/components/landing/Footer";
@@ -35,7 +34,6 @@ const Index = () => {
       <Abordagem />
       <ComoFunciona />
       <CtaCentral />
-      <InstagramPreview />
       <Etica />
       <Faq />
       <Footer />

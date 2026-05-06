@@ -1,7 +1,7 @@
 import { ShieldCheck, Lock, FileCheck, Heart } from "lucide-react";
 
 const tags = [
-  { icon: ShieldCheck, label: "CFP — Código de Ética" },
+  { icon: ShieldCheck, label: "CFP · Código de Ética" },
   { icon: Lock,        label: "LGPD" },
   { icon: FileCheck,   label: "Sigilo absoluto" },
   { icon: Heart,       label: "Plataforma segura" },
@@ -27,7 +27,7 @@ const Etica = () => (
         </h2>
 
         <p className="font-body text-[16px] text-white/80 leading-[1.85] max-w-2xl mx-auto mb-3">
-          Todo atendimento — presencial ou online — segue o Código de Ética Profissional do Psicólogo (CFP)
+          Todo atendimento, presencial ou online, segue o Código de Ética Profissional do Psicólogo (CFP)
           e as diretrizes da Lei Geral de Proteção de Dados (LGPD).
         </p>
         <p className="font-body text-[16px] text-white/80 leading-[1.85] max-w-2xl mx-auto mb-10">
@@ -61,7 +61,7 @@ const Etica = () => (
             href="tel:188"
             className="text-champagne underline underline-offset-4 hover:text-white transition-colors font-semibold"
           >
-            CVV — 188
+            CVV · 188
           </a>
           {" "}
           (24h, gratuito, sigiloso) ou procure a emergência mais próxima.

@@ -6,10 +6,10 @@
     </radialGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <line x1="80" y1="170" x2="120" y2="170" stroke="#A68B68" stroke-width="3"/>
-  <text x="80" y="225" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#A68B68" letter-spacing="6">CRP 01/24403 · BRASÍLIA · HÍBRIDO</text>
+  <line x1="80" y1="170" x2="120" y2="170" stroke="#5A8B6E" stroke-width="3"/>
+  <text x="80" y="225" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#5A8B6E" letter-spacing="6">CRP 01/24403 · BRASÍLIA · HÍBRIDO</text>
   <text x="80" y="315" font-family="Cormorant Garamond, Georgia, serif" font-size="78" font-weight="300" fill="#FFFFFF">Lucas Magno</text>
-  <text x="80" y="395" font-family="Cormorant Garamond, Georgia, serif" font-size="78" font-weight="300" font-style="italic" fill="#A68B68">Neuropsicólogo</text>
+  <text x="80" y="395" font-family="Cormorant Garamond, Georgia, serif" font-size="78" font-weight="300" font-style="italic" fill="#5A8B6E">Neuropsicólogo</text>
   <text x="80" y="475" font-family="Cormorant Garamond, Georgia, serif" font-size="78" font-weight="300" fill="#FFFFFF">Psicólogo Clínico</text>
   <text x="80" y="545" font-family="Inter, sans-serif" font-size="22" fill="#A4B5C4">Avaliação neuropsicológica · Psicoterapia para adultos</text>
 </svg>

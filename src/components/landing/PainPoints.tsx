@@ -1,16 +1,14 @@
 const pains = [
-  '"Eu já tentei terapia. Não sei se isso é pra mim de novo."',
-  '"Sinto que tem algo diferente em como eu funciono — só não sei nomear."',
-  '"Quero entender o que se passa antes de aceitar mais um diagnóstico."',
-  '"Cresci sendo \'inteligente demais\' ou \'sensível demais\'. Hoje isso pesa."',
-  '"Estou em um momento de perda — e ninguém ao redor parece entender."',
-  '"Funciono bem por fora. Por dentro, é cansativo demais."',
+  '"Já tentei terapia antes. Saí frustrado, sentindo que ninguém me escutou direito."',
+  '"Tenho construído tudo certo por fora, mas algo dentro de mim não se sente bem com isso."',
+  '"Sinto que funciono diferente das pessoas. Cresci ouvindo que era \'demais\' e isso ainda pesa."',
+  '"Perdi alguém importante e a vida continua, mas eu fiquei parado em algum momento."',
+  '"Não sei se o que sinto justifica procurar ajuda. Talvez eu só esteja exigindo demais de mim."',
+  '"A gente discute as mesmas coisas há anos. Quero entender o que está por trás disso, antes de decidir o que fazer."',
 ];
 
 const PainPoints = () => (
-  <section
-    className="py-20 md:py-24 bg-off-white relative"
-  >
+  <section className="py-20 md:py-24 bg-off-white relative">
     <div className="container max-w-5xl">
       <div className="text-center mb-12 fade-up">
         <span className="section-label">Talvez você se reconheça</span>
@@ -40,7 +38,7 @@ const PainPoints = () => (
 
       <div className="fade-up mt-12 text-center">
         <p className="font-body text-[15px] text-slate/75 max-w-xl mx-auto leading-[1.8]">
-          Se algo aqui ressoou — não significa que você precisa ter certeza.
+          Se algo aqui ressoou, não significa que você precisa ter certeza.
           Significa apenas que talvez seja o momento de uma escuta atenta.
         </p>
       </div>

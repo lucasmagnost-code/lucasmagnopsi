@@ -3,12 +3,12 @@ import { Instagram, MessageCircle, ShieldCheck } from "lucide-react";
 import { WA } from "@/lib/whatsapp";
 
 const navLinks = [
-  { label: "Sobre",         href: "#sobre" },
+  { label: "Sobre",          href: "#sobre" },
   { label: "Especialidades", href: "#especialidades" },
-  { label: "Avaliação",     href: "#avaliacao" },
+  { label: "Avaliação",      href: "#avaliacao" },
   { label: "Auto-avaliação", href: "#auto-avaliacao" },
-  { label: "Como Funciona", href: "#como-funciona" },
-  { label: "FAQ",           href: "#faq" },
+  { label: "Como Funciona",  href: "#como-funciona" },
+  { label: "FAQ",            href: "#faq" },
 ];
 
 const Footer = () => (
@@ -26,8 +26,8 @@ const Footer = () => (
             CRP 01/24403 · Brasília, DF<br />
             Atendimento presencial e online
           </p>
-          <div className="mt-5 inline-flex items-center gap-2 text-[11px] text-white/50">
-            <ShieldCheck size={13} strokeWidth={1.8} className="text-gold" />
+          <div className="mt-5 flex items-center gap-2 text-[11px] text-white/50">
+            <ShieldCheck size={13} strokeWidth={1.8} className="text-gold flex-shrink-0" />
             <span>CFP · LGPD · Sigilo absoluto</span>
           </div>
         </div>
@@ -54,20 +54,20 @@ const Footer = () => (
             href="https://www.instagram.com/lucasmagno.psi/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 font-body text-[13px] text-white/60 hover:text-gold transition-colors mb-3"
+            className="flex items-center gap-2 font-body text-[13px] text-white/60 hover:text-gold transition-colors mb-3"
           >
-            <Instagram size={14} strokeWidth={1.8} />
-            @lucasmagno.psi
+            <Instagram size={14} strokeWidth={1.8} className="flex-shrink-0" />
+            <span>@lucasmagno.psi</span>
           </a>
 
           <a
             href={WA.default}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 font-body text-[13px] text-white/60 hover:text-gold transition-colors mb-5"
+            className="flex items-center gap-2 font-body text-[13px] text-white/60 hover:text-gold transition-colors mb-5"
           >
-            <MessageCircle size={14} strokeWidth={1.8} />
-            WhatsApp direto
+            <MessageCircle size={14} strokeWidth={1.8} className="flex-shrink-0" />
+            <span>WhatsApp direto</span>
           </a>
 
           <a
@@ -95,7 +95,7 @@ const Footer = () => (
           <a
             href="tel:188"
             className="text-white/50 hover:text-gold transition-colors"
-            title="Centro de Valorização da Vida — 24h"
+            title="Centro de Valorização da Vida · 24h"
           >
             CVV · 188
           </a>

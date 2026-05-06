@@ -20,7 +20,7 @@ const CtaCentral = () => (
 
         <p className="font-body text-[17px] text-white/60 leading-[1.8] max-w-lg mx-auto mb-10">
           Dar o primeiro passo é a parte mais difícil. A partir daí,
-          caminhamos juntos — no seu tempo, sem julgamento.
+          caminhamos juntos, no seu tempo, sem julgamento.
         </p>
 
         <a
