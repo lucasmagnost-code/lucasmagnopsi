@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import heroImg from "@/assets/lucas-hero.png";
 import { WA } from "@/lib/whatsapp";
+import HeroBackdrop from "./HeroBackdrop";
 
 const Hero = () => {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
@@ -24,10 +25,13 @@ const Hero = () => {
         background: "radial-gradient(ellipse 80% 70% at 70% 50%, #0d2150 0%, #071739 60%)",
       }}
     >
+      {/* Animated geometric backdrop (breathing ring + drifting lines) */}
+      <HeroBackdrop />
+
       {/* Decorative elements (desktop only) */}
-      <div className="hidden md:block absolute top-1/4 left-8 w-[1px] h-32 bg-gold/30" />
-      <div className="hidden md:block absolute top-1/4 left-8 w-4 h-[1px] bg-gold/30" />
-      <div className="hidden md:block absolute bottom-1/3 left-8 w-4 h-[1px] bg-gold/30" />
+      <div className="hidden md:block absolute top-1/4 left-8 w-[1px] h-32 bg-gold/30 z-[1]" />
+      <div className="hidden md:block absolute top-1/4 left-8 w-4 h-[1px] bg-gold/30 z-[1]" />
+      <div className="hidden md:block absolute bottom-1/3 left-8 w-4 h-[1px] bg-gold/30 z-[1]" />
 
       <div className="container relative z-10 flex flex-col md:flex-row items-center gap-8 md:gap-12 pt-24 md:pt-20 pb-16 md:pb-12">
 
@@ -39,11 +43,7 @@ const Hero = () => {
           >
             {/* Arch frame */}
             <div
-              className="relative"
-              style={{
-                width: "min(72vw, 280px)",
-                height: "min(96vw, 380px)",
-              }}
+              className="relative w-[80vw] h-[107vw] max-w-[320px] max-h-[427px] md:!w-[380px] md:!h-[504px] md:!max-w-none md:!max-h-none"
             >
               {/* Subtle accent ring behind photo */}
               <div
@@ -104,8 +104,8 @@ const Hero = () => {
             style={{ transitionDelay: "0.2s" }}
           >
             Psicoterapia e avaliação neuropsicológica para adultos que querem entender
-            o que sentem antes de decidir o que fazer. Atendimento presencial em Brasília
-            e online para todo o Brasil.
+            o que sentem antes de decidir o que fazer. Atendimento online para o Brasil
+            todo.
           </p>
 
           {/* CTAs */}
