@@ -1,15 +1,19 @@
 import { WA } from "@/lib/whatsapp";
+import HeroBackdrop from "./HeroBackdrop";
 
 const CtaCentral = () => (
   <section
     className="py-24 relative grain overflow-hidden"
     style={{ background: "linear-gradient(135deg, #071739 0%, #0d2150 50%, #071739 100%)" }}
   >
-    {/* Decorative lines */}
-    <div className="absolute top-0 left-0 right-0 h-[1px] bg-gold/20" />
-    <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gold/20" />
+    {/* Mesma geometria animada da Hero (anel que respira + linhas pontilhadas à deriva) */}
+    <HeroBackdrop />
 
-    <div className="container max-w-3xl text-center">
+    {/* Decorative lines */}
+    <div className="absolute top-0 left-0 right-0 h-[1px] bg-gold/20 z-[1]" />
+    <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gold/20 z-[1]" />
+
+    <div className="container max-w-3xl text-center relative z-10">
       <div className="fade-up">
         <div className="w-12 h-[2px] bg-gold mx-auto mb-8" />
 

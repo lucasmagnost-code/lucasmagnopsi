@@ -109,15 +109,23 @@
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.55s ease, transform 0.55s ease;
+  will-change: opacity, transform;
 }
 .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-.slide-left  { opacity: 0; transform: translateX(-50px); transition: opacity 0.5s ease, transform 0.5s ease; }
-.slide-right { opacity: 0; transform: translateX(50px);  transition: opacity 0.5s ease, transform 0.5s ease; }
+.slide-left  { opacity: 0; transform: translateX(-50px); transition: opacity 0.5s ease, transform 0.5s ease; will-change: opacity, transform; }
+.slide-right { opacity: 0; transform: translateX(50px);  transition: opacity 0.5s ease, transform 0.5s ease; will-change: opacity, transform; }
 .slide-left.visible, .slide-right.visible { opacity: 1; transform: translateX(0); }
+
+/* No mobile, os slides laterais viram fade vertical: evita overflow horizontal e
+   garante que a animação apareça mesmo no carro-chefe (telas pequenas). */
+@media (max-width: 767px) {
+  .slide-left, .slide-right { transform: translateY(28px); }
+  .slide-left.visible, .slide-right.visible { transform: translateY(0); }
+}
 
 .quiz-fade {
   animation: quizFade 0.45s cubic-bezier(0.16, 1, 0.3, 1);

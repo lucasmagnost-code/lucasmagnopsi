@@ -1,3 +1,5 @@
+import lucasTrabalho from "@/assets/lucas-trabalho.jpg";
+
 const approaches = [
   {
     emoji: "◯",
@@ -57,11 +59,29 @@ const Abordagem = () => (
         ))}
       </div>
 
-      {/* Pull quote */}
-      <blockquote className="fade-up text-center mt-14 font-display text-[22px] md:text-[26px] italic text-slate max-w-2xl mx-auto leading-[1.5]">
-        "Consiga ser quem você é, a maior parte do tempo,<br className="hidden md:block" />
-        filtrando o que impede isso."
-      </blockquote>
+      {/* Foto + frase-chave */}
+      <div className="mt-16 grid md:grid-cols-12 gap-8 md:gap-10 items-center">
+        <div className="md:col-span-5 fade-up">
+          <div className="rounded-3xl overflow-hidden shadow-card aspect-[4/3] md:aspect-[4/5]">
+            <img
+              src={lucasTrabalho}
+              alt="Lucas Magno no consultório"
+              loading="lazy"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+        </div>
+        <div className="md:col-span-7 fade-up" style={{ transitionDelay: "0.12s" }}>
+          <span className="section-label">No consultório</span>
+          <blockquote className="mt-4 font-display text-[24px] md:text-[30px] italic text-slate leading-[1.45]">
+            "Consiga ser quem você é, a maior parte do tempo, filtrando o que impede isso."
+          </blockquote>
+          <p className="mt-5 font-body text-[14.5px] text-slate/75 leading-[1.85]">
+            Presencial em Brasília, online para todo o Brasil. O que muda é o formato, não o cuidado:
+            a mesma escuta, a mesma seriedade técnica, o mesmo respeito pelo seu tempo.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 );

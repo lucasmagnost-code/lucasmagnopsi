@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import heroImg from "@/assets/lucas-hero.png";
+import heroImg from "@/assets/lucas-hero.jpg";
 import { WA } from "@/lib/whatsapp";
 import HeroBackdrop from "./HeroBackdrop";
 

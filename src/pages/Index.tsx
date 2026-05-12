@@ -33,9 +33,9 @@ const Index = () => {
       <SelfAssessment />
       <Abordagem />
       <ComoFunciona />
-      <CtaCentral />
       <Etica />
       <Faq />
+      <CtaCentral />
       <Footer />
       <WhatsAppFloat />
       <StickyMobileBar />
