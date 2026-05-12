@@ -50,9 +50,9 @@ const HeroBackdrop = () => {
         />
       </svg>
 
-      {/* Drifting dotted lines (desktop only) */}
+      {/* Drifting dotted lines + harmonic arc (desktop e mobile) */}
       <svg
-        className="hidden md:block absolute inset-0 w-full h-full"
+        className="absolute inset-0 w-full h-full"
         preserveAspectRatio="none"
         viewBox="0 0 1440 900"
         fill="none"
