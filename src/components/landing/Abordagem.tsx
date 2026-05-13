@@ -62,12 +62,12 @@ const Abordagem = () => (
       {/* Foto + frase-chave */}
       <div className="mt-16 grid md:grid-cols-12 gap-8 md:gap-10 items-center">
         <div className="md:col-span-5 fade-up">
-          <div className="rounded-3xl overflow-hidden shadow-card aspect-[4/3] md:aspect-[4/5]">
+          <div className="rounded-3xl overflow-hidden shadow-card aspect-[4/5]">
             <img
               src={lucasTrabalho}
               alt="Lucas Magno no consultório"
               loading="lazy"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-top"
             />
           </div>
         </div>

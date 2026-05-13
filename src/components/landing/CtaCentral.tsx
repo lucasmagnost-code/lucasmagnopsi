@@ -41,7 +41,7 @@ const CtaCentral = () => (
             href="https://www.instagram.com/lucasmagno.psi/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-body text-[13px] text-gold/70 hover:text-gold transition-colors underline underline-offset-4"
+            className="font-body text-[13px] text-champagne/85 hover:text-champagne transition-colors underline underline-offset-4"
           >
             @lucasmagno.psi no Instagram
           </a>

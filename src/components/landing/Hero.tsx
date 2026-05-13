@@ -79,9 +79,8 @@ const Hero = () => {
         <div className="w-full md:w-[52%] flex flex-col gap-5 md:gap-6 order-2 md:order-1">
 
           {/* Badge */}
-          <div className="fade-up flex items-center gap-3">
-            <div className="w-10 h-[2px] bg-gold" />
-            <span className="font-body text-[11px] font-semibold tracking-[0.22em] uppercase text-gold/90">
+          <div className="fade-up">
+            <span className="font-body text-[10px] sm:text-[11px] font-semibold tracking-[0.14em] sm:tracking-[0.22em] uppercase text-champagne">
               CRP 01/24403 · Brasília, DF · Híbrido
             </span>
           </div>

@@ -26,12 +26,12 @@ const StickyMobileBar = () => {
         href={WA.default}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center gap-2 w-full
-                   bg-gold text-navy rounded-full py-3 px-6
-                   font-body font-semibold text-[14px] tracking-wide
+        className="flex items-center justify-center gap-2.5 w-full
+                   bg-gold text-navy rounded-full py-3.5 px-6
+                   font-body font-semibold text-base tracking-wide
                    transition-all hover:brightness-110"
       >
-        <MessageCircle size={17} strokeWidth={2} />
+        <MessageCircle size={19} strokeWidth={2.2} />
         Agendar pelo WhatsApp
       </a>
     </div>
